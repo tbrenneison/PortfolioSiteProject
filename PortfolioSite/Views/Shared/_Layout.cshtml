@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery-2.1.4.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+</head>
+<body>
+    
+    <div class="container pankborder">
+        <h1 class="aligncenter pankborder">site title</h1>
+                    <div class="navbar-default navbar-nav">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                            this is the stupid button
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pankborder" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                       
+                     </div>
+
+
+
+        <div class="body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+            <p>&copy; @DateTime.Now.Year - Tori Brenneison</p>
+            </footer>
+        </div>
+
+    </div>
+  
+
+    
+</body>
+</html>
