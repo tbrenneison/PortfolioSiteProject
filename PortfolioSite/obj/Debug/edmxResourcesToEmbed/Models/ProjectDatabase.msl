@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PortfolioSiteModelStoreContainer" CdmEntityContainer="PortfolioSiteEntities">
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="PortfolioSiteModel.Project">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ScreenshotURL" ColumnName="ScreenshotURL" />
+          <ScalarProperty Name="GithubURL" ColumnName="GithubURL" />
+          <ScalarProperty Name="OtherInfo" ColumnName="OtherInfo" />
+          <ScalarProperty Name="ToolsAndSkills" ColumnName="ToolsAndSkills" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

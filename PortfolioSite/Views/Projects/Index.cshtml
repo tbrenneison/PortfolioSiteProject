@@ -1,0 +1,59 @@
+﻿@model IEnumerable<PortfolioSite.Models.Project>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="aligncenter">Projects</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScreenshotURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GithubURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ToolsAndSkills)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            <div class="projectthumbnail">
+                <img src="~/@Html.DisplayFor(modelItem => item.ScreenshotURL)" class="img-responsive" />
+            </div>
+        </td>
+        <td>
+            <a href="@Html.DisplayFor(modelItem => item.GithubURL)" target="_blank">Link</a>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ToolsAndSkills)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProjectId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectId })
+        </td>
+    </tr>
+}
+
+</table>

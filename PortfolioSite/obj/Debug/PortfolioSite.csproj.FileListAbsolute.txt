@@ -31,3 +31,7 @@ C:\Users\WeCanCodeIT\Desktop\PortfolioSite\PortfolioSite\bin\System.Web.Mvc.xml
 C:\Users\WeCanCodeIT\Desktop\PortfolioSite\PortfolioSite\obj\Debug\PortfolioSite.csprojResolveAssemblyReference.cache
 C:\Users\WeCanCodeIT\Desktop\PortfolioSite\PortfolioSite\obj\Debug\PortfolioSite.dll
 C:\Users\WeCanCodeIT\Desktop\PortfolioSite\PortfolioSite\obj\Debug\PortfolioSite.pdb
+C:\Users\WeCanCodeIT\Desktop\PortfolioSite\PortfolioSite\bin\EntityFramework.dll
+C:\Users\WeCanCodeIT\Desktop\PortfolioSite\PortfolioSite\bin\EntityFramework.SqlServer.dll
+C:\Users\WeCanCodeIT\Desktop\PortfolioSite\PortfolioSite\bin\EntityFramework.xml
+C:\Users\WeCanCodeIT\Desktop\PortfolioSite\PortfolioSite\bin\EntityFramework.SqlServer.xml

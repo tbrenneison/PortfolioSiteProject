@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
     <script src="~/Scripts/jquery-2.1.4.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
@@ -13,19 +14,23 @@
 <body>
     
     <div class="container pankborder">
-        <h1 class="aligncenter pankborder">site title</h1>
+        <h1 class="aligncenter pankborder">
+        <i class="fa fa-star fa-lg"></i>
+        site title wooooo
+        <i class="fa fa-star fa-lg"></i>
+        </h1>
                     <div class="navbar-default navbar-nav">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                            this is the stupid button
+                            <i class="fa fa-caret-square-o-down fa-2x"></i>
                         </button>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pankborder" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
                         </ul>
                        
                      </div>
