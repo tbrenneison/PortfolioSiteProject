@@ -13,10 +13,10 @@ namespace PortfolioSite.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PortfolioSiteEntities : DbContext
+    public partial class PortfolioSiteEntities2 : DbContext
     {
-        public PortfolioSiteEntities()
-            : base("name=PortfolioSiteEntities")
+        public PortfolioSiteEntities2()
+            : base("name=PortfolioSiteEntities2")
         {
         }
     
@@ -25,6 +25,8 @@ namespace PortfolioSite.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<ProjectImage> ProjectImages { get; set; }
         public virtual DbSet<Project> Projects { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

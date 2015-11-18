@@ -11,23 +11,23 @@ namespace PortfolioSite.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Project
     {
-        [Key]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Project()
+        {
+            this.ProjectImages = new HashSet<ProjectImage>();
+        }
+    
         public int ProjectId { get; set; }
-        [Display(Name = "Name")]
         public string Name { get; set; }
-        [Display(Name = "Description")]
         public string Description { get; set; }
-        [Display(Name = "Preview Image")]
         public string ScreenshotURL { get; set; }
-        [Display(Name = "Github Repo")]
         public string GithubURL { get; set; }
-        [Display(Name = "Other Information")]
-        public string OtherInfo { get; set; }
-        [Display(Name = "Tools & Skills")]
         public string ToolsAndSkills { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ProjectImage> ProjectImages { get; set; }
     }
 }

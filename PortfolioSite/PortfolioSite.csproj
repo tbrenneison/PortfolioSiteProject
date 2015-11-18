@@ -113,23 +113,23 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <EntityDeploy Include="Models\ProjectDatabase.edmx">
+    <EntityDeploy Include="Models\ProjectModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ProjectDatabase.Designer.cs</LastGenOutput>
+      <LastGenOutput>ProjectModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\ProjectDatabase.edmx.diagram">
-      <DependentUpon>ProjectDatabase.edmx</DependentUpon>
+    <Content Include="Models\ProjectModel.edmx.diagram">
+      <DependentUpon>ProjectModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
-    <Content Include="Models\ProjectDatabase.Context.tt">
+    <Content Include="Models\ProjectModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ProjectDatabase.edmx</DependentUpon>
-      <LastGenOutput>ProjectDatabase.Context.cs</LastGenOutput>
+      <DependentUpon>ProjectModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ProjectDatabase.tt">
+    <Content Include="Models\ProjectModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ProjectDatabase.edmx</DependentUpon>
-      <LastGenOutput>ProjectDatabase.cs</LastGenOutput>
+      <DependentUpon>ProjectModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -139,11 +139,6 @@
     <Content Include="Web.config" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Projects\Create.cshtml" />
-    <Content Include="Views\Projects\Delete.cshtml" />
-    <Content Include="Views\Projects\Details.cshtml" />
-    <Content Include="Views\Projects\Edit.cshtml" />
-    <Content Include="Views\Projects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -153,22 +148,28 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Project.cs">
-      <DependentUpon>ProjectDatabase.tt</DependentUpon>
+      <DependentUpon>ProjectModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ProjectDatabase.Context.cs">
+    <Compile Include="Models\ProjectImage.cs">
+      <DependentUpon>ProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProjectModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProjectDatabase.Context.tt</DependentUpon>
+      <DependentUpon>ProjectModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ProjectDatabase.cs">
+    <Compile Include="Models\ProjectModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProjectDatabase.tt</DependentUpon>
+      <DependentUpon>ProjectModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ProjectDatabase.Designer.cs">
+    <Compile Include="Models\ProjectModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProjectDatabase.edmx</DependentUpon>
+      <DependentUpon>ProjectModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>ProjectModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -179,6 +180,11 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="Views\Projects\Create.cshtml" />
+    <Content Include="Views\Projects\Delete.cshtml" />
+    <Content Include="Views\Projects\Details.cshtml" />
+    <Content Include="Views\Projects\Edit.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
