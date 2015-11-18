@@ -11,7 +11,8 @@ namespace PortfolioSite.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Project
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,11 +21,17 @@ namespace PortfolioSite.Models
             this.ProjectImages = new HashSet<ProjectImage>();
         }
     
+        [Key]
         public int ProjectId { get; set; }
+        [Display(Name = "Name")]
         public string Name { get; set; }
+        [Display(Name = "Description")]
         public string Description { get; set; }
+        [Display(Name = "Preview Image")]
         public string ScreenshotURL { get; set; }
+        [Display(Name = "Github Repo")]
         public string GithubURL { get; set; }
+        [Display(Name = "Tools & Skills")]
         public string ToolsAndSkills { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

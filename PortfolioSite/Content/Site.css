@@ -70,5 +70,42 @@ textarea {
 }
 
 .projectthumbnail {
+    width: 200px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.projectpreviewboxcontainer
+{
     width: 300px;
+    display: inline-block;
+    text-align: center;
+
+}
+.projectpreviewbox {
+    width: 100%;
+    height: auto; 
+    text-align: center;
+    border-top: none;
+    border-left: 2px dashed gray;
+    border-right: 2px dashed gray;
+    border-bottom: 2px dashed gray;
+}
+
+.projectpreviewboxtop {
+    width: 100%;  
+    text-align: center;
+    background: #c4c4c4;
+    border: 2px solid gray;
+}
+
+.flexcontainer { 
+    width: 100%;
+    display: inline-flex; 
+    flex-flow: row wrap; 
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
 }
