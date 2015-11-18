@@ -23,13 +23,13 @@ namespace PortfolioSite.Models
     
         [Key]
         public int ProjectId { get; set; }
-        [Display(Name = "Name")]
+        [Display(Name="Name")]
         public string Name { get; set; }
         [Display(Name = "Description")]
         public string Description { get; set; }
         [Display(Name = "Preview Image")]
         public string ScreenshotURL { get; set; }
-        [Display(Name = "Github Repo")]
+        [Display(Name = "Github Repository")]
         public string GithubURL { get; set; }
         [Display(Name = "Tools & Skills")]
         public string ToolsAndSkills { get; set; }

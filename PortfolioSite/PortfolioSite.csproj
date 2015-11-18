@@ -103,6 +103,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CoLeadr_Images\CoLeader_AddToGroup.png" />
+    <Content Include="Content\CoLeadr_Images\CoLeader_Code.png" />
+    <Content Include="Content\CoLeadr_Images\CoLeader_PeopleIndex.png" />
+    <Content Include="Content\CoLeadr_Images\CoLeader_ProjectDetails.png" />
+    <Content Include="Content\CoLeadr_Images\CoLeader_TaskIndex.png" />
+    <Content Include="Content\fancybox_sprite.png" />
+    <Content Include="Content\jquery.fancybox.css" />
+    <Content Include="Content\MovieRentalApp_Images\MovieApp_Code.png" />
+    <Content Include="Content\MovieRentalApp_Images\MovieApp_Code2.png" />
+    <Content Include="Content\MovieRentalApp_Images\MovieApp_Selection.png" />
+    <Content Include="Content\MovieRentalApp_Images\MovieApp_Start.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\WeatherApp_Images\weatherapp.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -135,6 +146,8 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery.fancybox.js" />
+    <Content Include="Scripts\jquery.fancybox.pack.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\About.cshtml" />

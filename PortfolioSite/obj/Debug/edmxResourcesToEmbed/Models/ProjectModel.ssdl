@@ -8,6 +8,7 @@
     <Property Name="ProjectID" Type="int" Nullable="false" />
     <Property Name="ImageURL" Type="nvarchar" MaxLength="50" />
     <Property Name="ImageDescription" Type="nvarchar" MaxLength="100" />
+    <Property Name="ImageName" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Projects">
     <Key>

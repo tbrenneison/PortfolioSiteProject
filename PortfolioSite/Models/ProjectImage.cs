@@ -11,16 +11,14 @@ namespace PortfolioSite.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class ProjectImage
     {
-        [Key]
         public int ImageID { get; set; }
         public int ProjectID { get; set; }
         public string ImageURL { get; set; }
-        [Display(Name = "Description")]
         public string ImageDescription { get; set; }
+        public string ImageName { get; set; }
     
         public virtual Project Project { get; set; }
     }

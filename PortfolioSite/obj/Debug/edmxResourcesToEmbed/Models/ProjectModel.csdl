@@ -9,6 +9,7 @@
     <Property Name="ImageURL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ImageDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Project" Relationship="Self.FK_ProjectImages_Projects" FromRole="ProjectImages" ToRole="Projects" />
+    <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Project">
     <Key>
