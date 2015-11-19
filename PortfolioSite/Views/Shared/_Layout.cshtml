@@ -17,8 +17,8 @@
 </head>
 <body>
     
-    <div class="container pankborder">
-        <h1 class="aligncenter pankborder">
+    <div class="container" style="border: 2px dashed purple;">
+        <h1 class="alignright pankborder">
         <i class="fa fa-star fa-lg"></i>
         site title wooooo
         <i class="fa fa-star fa-lg"></i>
@@ -42,9 +42,14 @@
         <br />
         <div class="body-content">
             @RenderBody()
+            
+        </div>
+        
+        <div id="footer" style="display: block; clear: both;">
+            <br />
             <hr />
             <footer>
-            <p>&copy; @DateTime.Now.Year - Tori Brenneison</p>
+                <p class="alignright">&copy; @DateTime.Now.Year - Tori Brenneison</p>
             </footer>
         </div>
 

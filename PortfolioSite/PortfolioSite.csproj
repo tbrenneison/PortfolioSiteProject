@@ -114,6 +114,7 @@
     <Content Include="Content\MovieRentalApp_Images\MovieApp_Code2.png" />
     <Content Include="Content\MovieRentalApp_Images\MovieApp_Selection.png" />
     <Content Include="Content\MovieRentalApp_Images\MovieApp_Start.png" />
+    <Content Include="Content\Other_Images\csharppony_web.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\WeatherApp_Images\weatherapp.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

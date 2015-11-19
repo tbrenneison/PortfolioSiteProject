@@ -20,6 +20,18 @@ textarea {
     text-align: center;
 }
 
+.alignright {
+    text-align: right;
+}
+
+.imgaligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 /*PANKKKKK border for when I need to see elements 100% right there A+ very obvious-like */
 .pankborder {
     border: 1px solid hotpink;
@@ -27,16 +39,16 @@ textarea {
 
 /* Fixing the darned navbar */
 .navbar-collapse {
-    text-align: center;
+    text-align: right;
 }
 .navbar-collapse.collapse {
-        text-align: center; 
+        text-align: right; 
         height: auto !important;
         padding-bottom: 0;
         overflow: visible !important;
 }
 .navbar-nav {
-    text-align:center;
+    text-align:right;
     display: inline-block;
     float: none;
     margin: 0;
