@@ -103,6 +103,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Codeeval_Images\codeeval_profile.png" />
+    <Content Include="Content\Codeeval_Images\codeeval_ranking.png" />
     <Content Include="Content\CoLeadr_Images\CoLeader_AddToGroup.png" />
     <Content Include="Content\CoLeadr_Images\CoLeader_Code.png" />
     <Content Include="Content\CoLeadr_Images\CoLeader_PeopleIndex.png" />
@@ -115,6 +117,7 @@
     <Content Include="Content\MovieRentalApp_Images\MovieApp_Selection.png" />
     <Content Include="Content\MovieRentalApp_Images\MovieApp_Start.png" />
     <Content Include="Content\Other_Images\csharppony_web.png" />
+    <Content Include="Content\PortfolioSite_Images\PortfolioSite_IAddedAPony.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\WeatherApp_Images\weatherapp.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

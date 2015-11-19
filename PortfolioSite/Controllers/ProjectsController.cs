@@ -17,7 +17,9 @@ namespace PortfolioSite.Controllers
         // GET: Projects
         public ActionResult Index()
         {
-            return View(db.Projects.ToList());
+            List<Project> SortProjects = db.Projects.OrderBy(o => o.Name).ToList();
+
+            return View(SortProjects);
         }
 
         // GET: Projects/Details/5
