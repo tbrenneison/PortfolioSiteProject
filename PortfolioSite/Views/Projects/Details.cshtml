@@ -40,12 +40,10 @@
         <dd>
             @Html.DisplayFor(model => model.Description)
         </dd>
+    </dl>
 
-        <dt>
-            Images
-        </dt>
 
-        <dd>
+    <h4 class="aligncenter">@Html.DisplayNameFor(model => model.ProjectImages)</h4>
 
             <div class="flexcontainer">
                 @foreach (var image in Model.ProjectImages)
@@ -65,11 +63,11 @@
 
                 }
               </div>
-</dd>
+
 
         
 
-    </dl>
+    
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectId }) |

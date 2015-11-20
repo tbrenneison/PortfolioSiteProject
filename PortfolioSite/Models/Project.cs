@@ -34,7 +34,9 @@ namespace PortfolioSite.Models
         [Display(Name = "Tools & Skills")]
         public string ToolsAndSkills { get; set; }
     
+        
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [Display(Name = "Images")]
         public virtual ICollection<ProjectImage> ProjectImages { get; set; }
     }
 }

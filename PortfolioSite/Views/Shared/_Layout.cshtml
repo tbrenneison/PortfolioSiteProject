@@ -7,6 +7,7 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
     <script src="~/Scripts/jquery-2.1.4.js"></script>
@@ -16,12 +17,11 @@
     <link href="~/Content/jquery.fancybox.css" rel="stylesheet" />
 </head>
 <body>
-    
-    <div class="container" style="border: 2px dashed purple;">
-        <h1 class="alignright pankborder">
-        <i class="fa fa-star fa-lg"></i>
+    <br />
+    <!--start viewable content-->
+    <div class="container" style="border: 2px dashed #7f479a;">
+        <h1 class="permanentmarker alignright huge">
         site title wooooo
-        <i class="fa fa-star fa-lg"></i>
         </h1>
                     <div class="navbar-default navbar-nav">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -29,22 +29,23 @@
                         </button>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse pankborder" id="navbar-collapse-1">
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                            <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
+                            <li class="permanentmarker nothashuge">@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li class="permanentmarker nothashuge">@Html.ActionLink("About", "About", "Home")</li>
+                            <li class="permanentmarker nothashuge">@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li class="permanentmarker nothashuge">@Html.ActionLink("Projects", "Index", "Projects")</li>
                         </ul>
                      </div>
 
 
         <br />
+        <!--render individual view content-->
         <div class="body-content">
             @RenderBody()
             
         </div>
-        
+        <!--footer-->
         <div id="footer" style="display: block; clear: both;">
             <br />
             <hr />
@@ -55,7 +56,6 @@
 
     </div>
   
-
     
 </body>
 </html>

@@ -81,6 +81,8 @@ textarea {
     background-color: transparent;
 }
 
+/*Project/Detail View Things*/
+
 .projectthumbnail {
     width: 200px;
     display: block; 
@@ -102,18 +104,19 @@ textarea {
     height: auto; 
     text-align: center;
     border-top: none;
-    border-left: 2px dashed gray;
-    border-right: 2px dashed gray;
-    border-bottom: 2px dashed gray;
+    border-left: 2px dashed #7f479a;
+    border-right: 2px dashed #7f479a;
+    border-bottom: 2px dashed #7f479a;
 }
 
 .projectpreviewboxtop {
     width: 100%;  
     text-align: center;
-    background: #c4c4c4;
-    border: 2px solid gray;
+    background: #e7cafa;
+    border: 2px solid #7f479a;
 }
 
+/*Flex Container for Project/Detail Boxes*/
 .flexcontainer { 
     width: 100%;
     display: inline-flex; 
@@ -121,4 +124,18 @@ textarea {
     justify-content: space-around;
     align-items: center;
     align-content: stretch;
+}
+
+/*Google Font*/
+.permanentmarker {
+    font-family: 'Permanent Marker', cursive;
+}
+
+/*Big text is big*/
+.huge {
+    font-size: 450%; 
+}
+
+.nothashuge {
+    font-size: 150%;
 }
