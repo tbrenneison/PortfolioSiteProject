@@ -39,16 +39,16 @@ textarea {
 
 /* Fixing the darned navbar */
 .navbar-collapse {
-    text-align: right;
+    text-align: center;
 }
 .navbar-collapse.collapse {
-        text-align: right; 
+        text-align: center; 
         height: auto !important;
         padding-bottom: 0;
         overflow: visible !important;
 }
 .navbar-nav {
-    text-align:right;
+    text-align:center;
     display: inline-block;
     float: none;
     margin: 0;
@@ -81,15 +81,7 @@ textarea {
     background-color: transparent;
 }
 
-/*Project/Detail View Things*/
-
-.projectthumbnail {
-    width: 200px;
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-}
+/*Project/Detail Display Boxes: */
 
 .projectpreviewboxcontainer
 {
@@ -97,23 +89,40 @@ textarea {
     display: inline-block;
     text-align: center;
     margin-bottom: 20px;
+    border: 2px dashed #7f379a;
+    border-radius: 10px;
+    overflow: hidden;
 
 }
+
+.projectpreviewboxtop {
+    width: 100%;
+    text-align: center;
+    background: #e7cafa;
+    border-bottom: 2px solid #7f379a;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 .projectpreviewbox {
     width: 100%;
     height: auto; 
     text-align: center;
-    border-top: none;
-    border-left: 2px dashed #7f479a;
-    border-right: 2px dashed #7f479a;
-    border-bottom: 2px dashed #7f479a;
+
 }
 
-.projectpreviewboxtop {
-    width: 100%;  
-    text-align: center;
-    background: #e7cafa;
-    border: 2px solid #7f479a;
+.projecth {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.projectthumbnail {
+    width: 200px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 
 /*Flex Container for Project/Detail Boxes*/
@@ -128,7 +137,7 @@ textarea {
 
 /*Google Font*/
 .permanentmarker {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Homemade Apple', cursive;
 }
 
 /*Big text is big*/
@@ -138,4 +147,63 @@ textarea {
 
 .nothashuge {
     font-size: 150%;
+}
+
+
+/* LANKS */
+
+a:link {
+    color: #7f379a;
+}
+
+a:visited {
+    color: #7f379a;
+}
+
+a:hover {
+    color: #e7cafa;
+    text-decoration: none;
+}
+
+a:active {
+    color: #e7cafa;
+}
+
+/* Change up the navbar links*/
+
+.nav > li > a {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  color: #7f379a;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: #e7cafa;
+  text-decoration: none;
+  background-color: transparent;
+}
+.nav > li.disabled > a {
+  color: #777;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #7f379a;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  color: #e7cafa;
+  background-color: transparent;
+  border-color: none;
+}
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: transparent;
 }

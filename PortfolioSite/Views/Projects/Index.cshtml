@@ -1,10 +1,8 @@
 ﻿@model IEnumerable<PortfolioSite.Models.Project>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Projects";
 }
-
-<h3 class="aligncenter">Projects</h3>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -16,7 +14,7 @@
 
         <div class="projectpreviewboxcontainer">
             <div class="projectpreviewboxtop">
-                <h4>@Html.DisplayFor(modelitem => item.Name)</h4>
+                <h4 class="projecth">@Html.DisplayFor(modelitem => item.Name)</h4>
             </div>
             <div class="projectpreviewbox">
                 <div class="projectthumbnail">

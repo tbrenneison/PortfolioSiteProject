@@ -121,6 +121,7 @@
     <Content Include="Content\My_Little_Code_Ponies\SQLpony_web.png" />
     <Content Include="Content\PortfolioSite_Images\PortfolioSite_IAddedAPony.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\WCCIChallenges_Images\WCCIChallenges_madLibsGenerator1.png" />
     <Content Include="Content\WeatherApp_Images\weatherapp.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
