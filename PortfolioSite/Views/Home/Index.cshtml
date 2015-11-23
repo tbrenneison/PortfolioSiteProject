@@ -4,18 +4,40 @@
 }
 
 <div>
+    <!--determine which image to use based on session variable-->
+@{var ponies = Session["Ponies"] as string;}
+@if (ponies == "0")
+{
+    <img src="~/Content/Other_Images/selfie.png" class="img-responsive" style="float: right; max-width: 50%;" />
+}
+else
+{
+    <img src="~/Content/My_Little_Code_Ponies/infinitelooppony_web.png" class="img-responsive" style="float: right;" />
+}
 
-<img src="~/Content/My_Little_Code_Ponies/csharppony_web.png" class="img-responsive" style="float: right;" />
-    <div class="aligncenter">
+    <!--text on index page -->
+    <div id="indextext" class="aligncenter">
         <br />
+
         <h2 class="permanentmarker">Hi.</h2>
         <h3 class="permanentmarker">My name is</h3>
-        <h1 class="permanentmarker">Tori Brenneison</h1>
+        <h1 class="permanentmarker"><strong>Tori Brenneison</strong></h1>
         <h3 class="permanentmarker">and I</h3>
-        <h1 class="permanentmarker">make stuff.</h1>
+        @if (ponies == "0" || ponies == "1")
+        {
+            <h1 class="permanentmarker"><strong>make neat stuff.</strong></h1>
+        }
+        else
+        {
+            <h1 class="permanentmarker"><strong>only make ponies.</strong></h1>
+        }
         <br /><br />
-        <h3 class="permanentmarker">...and ponies.</h3>
-        <h3 class="permanentmarker">I make a lot of ponies.</h3>
+             <!--this div gets hidden with site.css and moarponies.css-->
+             <div class="hiddentagline">
+                 <h3 class="permanentmarker">...and ponies.</h3>
+                 <h3 class="permanentmarker">I make a <strong>lot</strong> of ponies.</h3>
+            </div>
+
     </div>
 </div>
 

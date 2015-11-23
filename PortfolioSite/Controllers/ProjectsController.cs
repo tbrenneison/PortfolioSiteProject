@@ -17,9 +17,21 @@ namespace PortfolioSite.Controllers
         // GET: Projects
         public ActionResult Index()
         {
-            List<Project> SortProjects = db.Projects.OrderBy(o => o.Name).ToList();
-
-            return View(SortProjects);
+            var ponies = Session["Ponies"].ToString();
+            //if running in normal or pony mode, you can see all the projects sorted alphabetically 
+            if (ponies == "0" || ponies == "1")
+            {
+                List<Project> SortProjects = db.Projects.OrderBy(o => o.Name).ToList();
+                return View(SortProjects);
+            }
+            else //but if super bonkers pony mode is on, you will ONLY be able to look at ponies
+            {
+                List<Project> TheOnlyProject = new List<Project>();
+                Project OnlyThisMatters = db.Projects.Find(7);
+                TheOnlyProject.Add(OnlyThisMatters);
+                //have to pass in an IEnumerable object 
+                return View(TheOnlyProject); 
+            }
         }
 
         // GET: Projects/Details/5

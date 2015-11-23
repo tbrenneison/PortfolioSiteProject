@@ -1,20 +1,20 @@
 ﻿body {
     padding-top: 0px;
     padding-bottom: 20px;
-    color: #382313;
-    background-color: #F1EED9;
+    background-color: #e7cafa;
+    font-family: 'Crafty Girls', cursive;
 }
 
+.container {
+    background-color: #ffffff;
+    position: relative;
+    width: 85%;
+}
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.container {
-    background-color: #ffffff;
-    width: 85%;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -97,7 +97,7 @@ textarea {
     display: inline-block;
     text-align: center;
     margin-bottom: 20px;
-    border: 2px dashed #2E221F;
+    border: 2px dashed #7f379a;
     border-radius: 10px;
     overflow: hidden;
 
@@ -106,8 +106,8 @@ textarea {
 .projectpreviewboxtop {
     width: 100%;
     text-align: center;
-    background: #F7EDBF;
-    border-bottom: 2px solid #2E221F;
+    background: #e7cafa;
+    border-bottom: 2px solid #7f379a;
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -116,7 +116,7 @@ textarea {
     width: 100%;
     height: auto; 
     text-align: center;
-    background-color: #F1EED9;
+
 }
 
 .projecth {
@@ -130,7 +130,7 @@ textarea {
     display: block; 
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #2E221F;
+    border: 1px solid #7f379a;
 }
 
 /*Flex Container for Project/Detail Boxes*/
@@ -145,12 +145,13 @@ textarea {
 
 /*Google Font*/
 .permanentmarker {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Crafty Girls', cursive;
 }
 
 /*Big text is big*/
 .huge {
     font-size: 450%; 
+    color: hotpink;
 }
 
 .nothashuge {
@@ -161,20 +162,20 @@ textarea {
 /* LANKS */
 
 a:link {
-    color: #58351A;
+    color: #7f379a;
 }
 
 a:visited {
-    color: #58351A;
+    color: #7f379a;
 }
 
 a:hover {
-    color: #382313;
-    text-decoration: underline;
+    color: #e7cafa;
+    text-decoration: none;
 }
 
 a:active {
-    color: #382313;
+    color: #e7cafa;
 }
 
 /* Change up the navbar links*/
@@ -183,21 +184,24 @@ a:active {
   position: relative;
   display: inline-block;
   padding: 15px;
-  color: #58351A;
+  color: #7f379a;
+  margin-left: 5px;
+  border-radius: 5px;
+  
 }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  color: #F7EDBF;
+  color: #ffffff;
   text-decoration: none;
-  background-color: transparent;
+  background-color: hotpink;
 }
 .nav > li.disabled > a {
   color: #777;
 }
 .nav > li.disabled > a:hover,
 .nav > li.disabled > a:focus {
-  color: #F7EDBF;
+  color: #7f379a;
   text-decoration: none;
   cursor: not-allowed;
   background-color: transparent;
@@ -205,7 +209,7 @@ a:active {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  color: #F7EDBF;
+  color: #e7cafa;
   background-color: transparent;
   border-color: none;
 }
@@ -217,21 +221,41 @@ a:active {
 }
 
 /* THINGS THAT CHANGE BETWEEN STYLESHEETS */
+
 .headercontent:before {
-    content: "Tori Brenneison";
+    content: "MY LITTLE CODING";
+    color: #ffffff;
+    text-shadow: 3px 3px 5px hotpink;
+}
+
+.codingismagictagline:before {
+    content: "ponies are magic";
+    color: #ffffff;
+    text-shadow: 3px 3px 5px hotpink;
 }
 
 .containerborder {
-    border: 3px solid #2E221F;
-    border-radius: 10px;
+    border: 3px solid #7f479a;
+    box-shadow:
+    0 0 0 10px hotpink,
+    0 0 0 15px #7f479a;
+
+}
+
+#headerdiv {
+    margin-left: -15px;
+    margin-right: -15px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,fbff32+13,76ff32+25,2989d8+40,5e28ff+53,8542ce+67,ac90cc+83,ffffff+98 */
+background: #ff3232; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff3232 0%, #fbff32 13%, #76ff32 25%, #2989d8 40%, #5e28ff 53%, #8542ce 67%, #ac90cc 83%, #ffffff 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ff3232 0%,#fbff32 13%,#76ff32 25%,#2989d8 40%,#5e28ff 53%,#8542ce 67%,#ac90cc 83%,#ffffff 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ff3232 0%,#fbff32 13%,#76ff32 25%,#2989d8 40%,#5e28ff 53%,#8542ce 67%,#ac90cc 83%,#ffffff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
 }
 
 .hiddentagline {
     visibility: hidden;
-}
-
-.makeneatstuff:before {
-    content: "make neat stuff."
 }
 
 /* Shrink h1 on small screens */
@@ -240,9 +264,9 @@ a:active {
         font-size: 300%; 
     }
 }
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     #indextext {
         clear: both;
     }
 }
+

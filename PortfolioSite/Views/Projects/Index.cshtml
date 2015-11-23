@@ -4,22 +4,33 @@
     ViewBag.Title = "Projects";
 }
 
+@{var ponies = Session["Ponies"] as string;}
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 
+<!--if in super bonkers pony mode, the only project that matters is ponies-->
+@if (ponies == "2")
+{
+    <h3 class="aligncenter permanentmarker">The only project that matters is ponies!!!</h3>
+        <br />
+}
+
 <div class="flexcontainer">
+ <!--display each project in it's own special project box-->
     @foreach (var item in Model)
     {
-
         <div class="projectpreviewboxcontainer">
             <div class="projectpreviewboxtop">
                 <h4 class="projecth">@Html.DisplayFor(modelitem => item.Name)</h4>
             </div>
             <div class="projectpreviewbox">
+                <br />
                 <div class="projectthumbnail">
                     <img src="~/@Html.DisplayFor(modelItem => item.ScreenshotURL)" class="img-responsive" />
                 </div>
+                <br />
                 <p>@Html.DisplayFor(modelItem => item.Description)</p>
                 <p>@Html.DisplayFor(modelItem => item.ToolsAndSkills)</p>
                 <a href="@Html.DisplayFor(modelItem => item.GithubURL)" target="_blank"><i class="fa fa-github-square fa-lg"></i> View Project on Github</a>

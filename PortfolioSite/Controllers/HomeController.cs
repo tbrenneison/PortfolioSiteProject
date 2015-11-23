@@ -8,10 +8,18 @@ namespace PortfolioSite.Controllers
 {
     public class HomeController : Controller
     {
+
+        //GET: Reset Session Variable from AJAX 
+        public ActionResult SetSession(string session)
+        {
+            Session["Ponies"] = session;
+            return RedirectToAction("Index");   
+        }
+
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            return View(); 
         }
 
         // GET: About

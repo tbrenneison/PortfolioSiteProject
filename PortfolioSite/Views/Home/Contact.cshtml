@@ -3,38 +3,44 @@
     ViewBag.Title = "Contact";
 }
 
+<!--determine to use image based on session variable-->
+@{var ponies = Session["Ponies"] as string;}
+@if (ponies == "1")
+{
+    <img src="~/Content/My_Little_Code_Ponies/infinitelooppony_web.png" class="img-responsive" style="float: left;" />
+}
+else if (ponies == "2")
+{
+    <img src="~/Content/My_Little_Code_Ponies/infinitelooppony_web.png" class="img-responsive" style="float: left; max-width: 30%" />
+    <img src="~/Content/My_Little_Code_Ponies/SQLpony_web.png" class="img-responsive" style="float: right; max-width: 30%;" />
 
-<img src="~/Content/My_Little_Code_Ponies/infinitelooppony_web.png" class="img-responsive" style="float: left;" />
+}
 
+<!-- all the links and Font Awesome icons -->
 <div class="aligncenter">
     <br />
     <a href="http://toribeth.com" target="_blank">
         <i class="fa fa-commenting fa-4x"></i>
     </a>
-
     <p><strong>Blog</strong> >> <a href="http://toribeth.com" target="_blank">toribeth.com</a></p>
 
     <a href="http://www.linkedin.com/in/tbrenneison" target="_blank">
         <i class="fa fa-linkedin-square fa-4x"></i>
     </a>
-
     <p><strong>Linkedin</strong> >> <a href="http://www.linkedin.com/in/tbrenneison" target="_blank">tbrenneison</a></p>
 
     <a href="http://github.com/tbrenneison" target="_blank">
         <i class="fa fa-github-square fa-4x"></i>
     </a>
-
     <p><strong>Github</strong> >> <a href="http://github.com/tbrenneison" target="_blank">tbrenneison</a></p>
 
     <a href="http://twitter.com/not_unambitious" target="_blank">
         <i class="fa fa-twitter-square fa-4x"></i>
     </a>
-
     <p><strong>Twitter</strong> >> <a href="http://twitter.com/not_unambitious" target="_blank">not_unambitious</a></p>
 
     <a href="http://instagram.com/tbrenneison" target="_blank">
         <i class="fa fa-instagram fa-4x"></i>
     </a>
-
     <p><strong>Instagram</strong> >> <a href="http://instagram.com/tbrenneison">tbrenneison</a></p>
 </div>

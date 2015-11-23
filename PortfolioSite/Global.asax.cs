@@ -14,5 +14,11 @@ namespace PortfolioSite
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
+
+        //session variable to hold value for crazy css switching
+        protected void Session_Start()
+        {
+            HttpContext.Current.Session.Add("Ponies", "0");
+        }
     }
 }

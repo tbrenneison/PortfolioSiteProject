@@ -3,26 +3,71 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--get session variable -->
+    @{var ponies = Session["Ponies"] as string;}
+    
+    <!--use session variable to determine which title is used -->
+    @if (ponies == "0")
+    {
     <title>@ViewBag.Title - Portfolio</title>
+    }
+    else if (ponies == "1")
+    {
+     <title>@ViewBag.Title - Coding is Magic</title>
+    }
+    else
+    {
+    <title>@ViewBag.Title - PONIES!!!11one</title>
+    }
+
+    <!--bootstrap-->
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- use session variable to determine which stylesheet is used to override bootstrap -->
+    @if (ponies == "0")
+    {
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    }
+    else if (ponies == "1")
+    {
+    <link href="~/Content/ponies.css" rel="stylesheet" type="text/css" />
+    }
+    else
+    {
+    <link href="~/Content/moarponies.css" rel="stylesheet" type="text/css" />
+    }
+
+    <!--other stuff: Font Awesome, Google fonts, jQuery, Fancybox-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
-
+    <link href='https://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
     <script src="~/Scripts/jquery-2.1.4.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
-
     <script src="~/Scripts/jquery.fancybox.pack.js"></script>
     <link href="~/Content/jquery.fancybox.css" rel="stylesheet" />
 </head>
+
 <body>
     <br />
     <!--start viewable content-->
-    <div class="container" style="border: 3px dashed #7f479a; border-radius: 10px;">
-        <br />
-        <h1 class="permanentmarker aligncenter huge">coding is magic</h1>
-        <!--navbar-->
+    <div class="container containerborder">
+        
+        <div id="headerdiv">
+            <br />
+            <!--if on super bonkers pony mode, header ponies!-->
+            @if(ponies == "2")
+            {
+                <img src="~/Content/My_Little_Code_Ponies/exceptionpony_web.png" class="img-responsive" style="float: left; max-width: 20%;" />
+                <img src="~/Content/My_Little_Code_Ponies/csharppony_web.png" class="img-responsive" style="float:right; max-width: 20%;" />
+            }
+            <!-- where is the content?  the content is in the css.  because it changes based on stylesheet.  magic! -->
+            <h1 class="permanentmarker aligncenter huge headercontent"></h1>
+            <h1 class="permanentmarker aligncenter huge codingismagictagline"></h1>
+            <!--navbar-->
+            <br />
+        </div>
+
         <div class="navbar-default navbar-nav">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
                 <i class="fa fa-caret-square-o-down fa-2x"></i>
@@ -38,20 +83,86 @@
             </ul>
         </div>
 
-
-        <br /><br />
+        <hr />
+        <br />
         <!--render individual view content-->
         <div class="body-content">
             @RenderBody()
         </div>
         <br />
+
+        <!--footer-->
+        <div id="footer" style="display: block; clear: both;">
+            <footer>
+                <p class="alignright">
+                    &copy; @DateTime.Now.Year - Tori Brenneison
+                    <br />
+                    <i id="noponies" class="fa fa-times-circle fa-lg"></i>
+                    <i id="makeponies" class="fa fa-plus-circle fa-lg"></i>
+                    <i id="moarponies" class="fa fa-exclamation-circle fa-lg"></i>
+                </p>
+            </footer>
+        </div>
+
     </div>
-    <!--footer-->
-    <div id="footer" class="container" style="display: block; clear: both;">
-        <footer>
-            <p class="alignright">&copy; @DateTime.Now.Year - Tori Brenneison</p>
-        </footer>
-    </div>
-    
+  
+    <!--Set session variable to 2 (moar ponies) using AJAX-->
+    <script>
+    $(document).ready(
+        $("#moarponies").click(function(){
+            $.ajax({
+                url: '@Url.Action("SetSession","Home")',
+                data: {session:"2"},
+                success: function () {
+                    $(window).on('beforeunload', function () {
+                        $(window).scrollTop(0);
+                    });
+                    window.location.reload(true);
+                },
+                error: function () {
+                    alert("Error occured!");
+                }
+            })
+        }));
+    </script>
+
+    <!--Set session variable to 1 (ponies) using AJAX-->
+<script>
+    $(document).ready(
+        $("#makeponies").click(function(){
+            $.ajax({
+                url: '@Url.Action("SetSession","Home")',
+                data: {session:"1"},
+                success: function () {
+                    $(window).on('beforeunload', function () {
+                        $(window).scrollTop(0);
+                    });
+                    window.location.reload(true);
+                },
+                error: function () {
+                    alert("Error occured!");
+                }
+            })
+        }));
+</script>
+    <!-- Reset session variable to 0 (no ponies) using AJAX-->
+<script>
+    $(document).ready(
+        $("#noponies").click(function(){
+            $.ajax({
+                url: '@Url.Action("SetSession","Home")',
+                data: {session:"0"},
+                success: function () {
+                    $(window).on('beforeunload', function () {
+                        $(window).scrollTop(0);
+                    });
+                    window.location.reload(true);
+                },
+                error: function () {
+                    alert("Error occured!");
+                }
+            })
+        }));
+    </script>
 </body>
 </html>

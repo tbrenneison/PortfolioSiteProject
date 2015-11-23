@@ -4,6 +4,7 @@
     ViewBag.Title = "Details";
 }
 
+<!-- directly from Entity Framework scaffolding-->
 <h3 class="aligncenter">Project Details</h3>
 <h4 class="aligncenter">@Html.DisplayFor(model => model.Name)</h4>
 <div>
@@ -22,7 +23,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.GithubURL)
+            <a href="@Html.DisplayFor(model => model.GithubURL)" target="_blank">@Html.DisplayFor(model => model.GithubURL)</a>
         </dd>
 
         <dt>
@@ -42,7 +43,8 @@
         </dd>
     </dl>
 
-
+    <!--images aren't in the table-->
+    <!--each image has it's own box, css shared with the project boxes-->
     <h4 class="aligncenter">@Html.DisplayNameFor(model => model.ProjectImages)</h4>
 
             <div class="flexcontainer">
@@ -74,6 +76,7 @@
     @Html.ActionLink("Back to List", "Index")
 </p>
 
+<!--jQuery for Fancybox-->
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
