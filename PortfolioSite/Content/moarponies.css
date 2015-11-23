@@ -2,6 +2,8 @@
     padding-top: 0px;
     padding-bottom: 20px;
     background-color: #e7cafa;
+    background: url(Other_Images/cloud_bg.png);
+    background-repeat: repeat;
     font-family: 'Crafty Girls', cursive;
     cursor: url(Other_Images/rubypony_cursor.png),auto;
 }

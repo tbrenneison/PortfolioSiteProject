@@ -118,6 +118,7 @@
     <Content Include="Content\MovieRentalApp_Images\movieapp_running.png" />
     <Content Include="Content\My_Little_Code_Ponies\csharppony_web.png" />
     <Content Include="Content\My_Little_Code_Ponies\exceptionpony_web.png" />
+    <Content Include="Content\Other_Images\cloud_bg.png" />
     <Content Include="Content\Other_Images\fluffy_cloud.png" />
     <Content Include="Content\My_Little_Code_Ponies\infinitelooppony_web.png" />
     <Content Include="Content\My_Little_Code_Ponies\rubypony_web.png" />
@@ -127,6 +128,7 @@
     <Content Include="Content\ponies.css" />
     <Content Include="Content\PortfolioSite_Images\ponyextravaganza_stylesheet.png" />
     <Content Include="Content\PortfolioSite_Images\ponystylesheet.png" />
+    <Content Include="Content\PortfolioSite_Images\portfoliosite_layoutrazor.png" />
     <Content Include="Content\PortfolioSite_Images\portfoliosite_layoutwires.png" />
     <Content Include="Content\PortfolioSite_Images\portfoliosite_ondevices.png" />
     <Content Include="Content\PortfolioSite_Images\portfolio_normal_smallscreen.png" />

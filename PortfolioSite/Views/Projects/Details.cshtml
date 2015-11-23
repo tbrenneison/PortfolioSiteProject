@@ -56,10 +56,13 @@
                             <h4 class="projecth">@image.ImageName</h4>
                         </div>
                         <div class="projectpreviewbox">
+                            <br />
                             <div class="projectthumbnail" style="display: inline-block">
-                                <a class="fancybox" rel="group" href="~/@image.ImageURL"><img src="~/@image.ImageURL" class="img-responsive" alt="" /></a>
-                                <p>@image.ImageDescription</p>
+                                <a class="fancybox" rel="group" href="~/@image.ImageURL"><img src="~/@image.ImageURL" class="img-responsive" alt="" /></a>   
                             </div>
+                            <br />
+                            <p style="margin: 0px;">@image.ImageDescription</p>
+                            <br />
                         </div>
                     </div>
 
@@ -72,8 +75,7 @@
     
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to Project List", "Index")
 </p>
 
 <!--jQuery for Fancybox-->
