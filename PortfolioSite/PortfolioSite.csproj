@@ -122,6 +122,7 @@
     <Content Include="Content\My_Little_Code_Ponies\infinitelooppony_web.png" />
     <Content Include="Content\My_Little_Code_Ponies\rubypony_web.png" />
     <Content Include="Content\My_Little_Code_Ponies\SQLpony_web.png" />
+    <Content Include="Content\Other_Images\rubypony_cursor.png" />
     <Content Include="Content\Other_Images\selfie.png" />
     <Content Include="Content\ponies.css" />
     <Content Include="Content\PortfolioSite_Images\ponyextravaganza_stylesheet.png" />
@@ -166,6 +167,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery-canvas-sparkles.js" />
     <Content Include="Scripts\jquery.fancybox.js" />
     <Content Include="Scripts\jquery.fancybox.pack.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />

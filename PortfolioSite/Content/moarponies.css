@@ -3,6 +3,7 @@
     padding-bottom: 20px;
     background-color: #e7cafa;
     font-family: 'Crafty Girls', cursive;
+    cursor: url(Other_Images/rubypony_cursor.png),auto;
 }
 
 .container {
@@ -161,6 +162,9 @@ textarea {
 
 /* LANKS */
 
+a {
+    cursor: url(Other_Images/rubypony_cursor.png),auto;
+}
 a:link {
     color: #7f379a;
 }
@@ -257,6 +261,87 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', end
 .hiddentagline {
     visibility: hidden;
 }
+
+/* Dancing Ponies */
+
+@keyframes csharpdance {
+    0% {
+    transform: rotate(20deg);
+    -moz-transform:rotate(20deg); 
+    -webkit-transform:rotate(20deg); 
+    -ms-transform:rotate(20deg);
+    }
+    25% {
+    transform: rotate(-20deg);
+    -moz-transform:rotate(-20deg); 
+    -webkit-transform:rotate(-20deg); 
+    -ms-transform:rotate(-20deg);
+    }
+    50% {
+    transform: rotate(20deg);
+    -moz-transform:rotate(20deg); 
+    -webkit-transform:rotate(20deg); 
+    -ms-transform:rotate(20deg);
+    }
+    75% {
+    transform: rotate(-20deg);
+    -moz-transform:rotate(-20deg); 
+    -webkit-transform:rotate(-20deg); 
+    -ms-transform:rotate(-20deg);
+    }
+    100% {
+    transform: rotate(20deg);
+    -moz-transform:rotate(20deg); 
+    -webkit-transform:rotate(20deg); 
+    -ms-transform:rotate(20deg);
+    }
+}
+
+.csharpdance {
+  animation-duration: 15s;
+  animation-name: csharpdance;
+  animation-iteration-count: infinite;
+}
+
+@keyframes exceptiondance {
+    0% {
+    transform: rotate(-30deg);
+    -moz-transform:rotate(-30deg); 
+    -webkit-transform:rotate(-30deg); 
+    -ms-transform:rotate(-30deg);
+    }
+    25% {
+    transform: rotate(10deg);
+    -moz-transform:rotate(10deg); 
+    -webkit-transform:rotate(10deg); 
+    -ms-transform:rotate(10deg);
+    }
+    50% {
+    transform: rotate(-30deg);
+    -moz-transform:rotate(-30deg); 
+    -webkit-transform:rotate(-30deg); 
+    -ms-transform:rotate(-30deg);
+    }
+    75% {
+    transform: rotate(10deg);
+    -moz-transform:rotate(10deg); 
+    -webkit-transform:rotate(10deg); 
+    -ms-transform:rotate(10deg);
+    }
+    100% {
+    transform: rotate(-30deg);
+    -moz-transform:rotate(-30deg); 
+    -webkit-transform:rotate(-30deg); 
+    -ms-transform:rotate(-30deg);
+    }
+}
+
+.exceptiondance {
+  animation-duration: 15s;
+  animation-name: exceptiondance;
+  animation-iteration-count: infinite;
+}
+
 
 /* Shrink h1 on small screens */
 @media only screen and (max-width: 800px) {

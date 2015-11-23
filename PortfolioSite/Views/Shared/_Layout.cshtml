@@ -46,6 +46,7 @@
     <script src="~/Scripts/bootstrap.js"></script>
     <script src="~/Scripts/jquery.fancybox.pack.js"></script>
     <link href="~/Content/jquery.fancybox.css" rel="stylesheet" />
+    
 </head>
 
 <body>
@@ -55,19 +56,18 @@
         
         <div id="headerdiv">
             <br />
-            <!--if on super bonkers pony mode, header ponies!-->
+            <!--if on super bonkers pony mode, dancing header ponies!-->
             @if(ponies == "2")
             {
-                <img src="~/Content/My_Little_Code_Ponies/exceptionpony_web.png" class="img-responsive" style="float: left; max-width: 20%;" />
-                <img src="~/Content/My_Little_Code_Ponies/csharppony_web.png" class="img-responsive" style="float:right; max-width: 20%;" />
+                <img src="~/Content/My_Little_Code_Ponies/exceptionpony_web.png" class="img-responsive exceptiondance" style="float: left; max-width: 20%;" />
+                <img src="~/Content/My_Little_Code_Ponies/csharppony_web.png" class="img-responsive csharpdance" style="float:right; max-width: 20%;" />
             }
             <!-- where is the content?  the content is in the css.  because it changes based on stylesheet.  magic! -->
             <h1 class="permanentmarker aligncenter huge headercontent"></h1>
             <h1 class="permanentmarker aligncenter huge codingismagictagline"></h1>
-            <!--navbar-->
             <br />
         </div>
-
+        <!--navbar-->
         <div class="navbar-default navbar-nav">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
                 <i class="fa fa-caret-square-o-down fa-2x"></i>
@@ -75,7 +75,7 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul id="navigation" class="nav navbar-nav">
                 <li class="permanentmarker nothashuge">@Html.ActionLink("Home", "Index", "Home")</li>
                 <li class="permanentmarker nothashuge">@Html.ActionLink("About", "About", "Home")</li>
                 <li class="permanentmarker nothashuge">@Html.ActionLink("Contact", "Contact", "Home")</li>
@@ -164,5 +164,6 @@
             })
         }));
     </script>
+
 </body>
 </html>
