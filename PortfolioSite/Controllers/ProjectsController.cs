@@ -49,6 +49,11 @@ namespace PortfolioSite.Controllers
             return View(project);
         }
 
+
+        //Keeping the scaffolded stuff just in case I ever need an easy way to edit things
+        /*
+
+
         // GET: Projects/Create
         public ActionResult Create()
         {
@@ -137,5 +142,9 @@ namespace PortfolioSite.Controllers
             }
             base.Dispose(disposing);
         }
+        
+
+        //end multi-line comment
+         */ 
     }
 }

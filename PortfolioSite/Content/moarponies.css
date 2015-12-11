@@ -267,6 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', end
 /* Dancing Ponies */
 
 @keyframes csharpdance {
+
     0% {
     transform: rotate(20deg);
     -moz-transform:rotate(20deg); 
@@ -297,6 +298,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', end
     -webkit-transform:rotate(20deg); 
     -ms-transform:rotate(20deg);
     }
+        /*
+    0% {
+        transform: translate(0px,0px); 
+        -webkit-transform: translate(0,0); 
+    }
+    100% {
+        transform: translate(-1000px, 500px); 
+        -webkit-transform: translate(-1000, 500); 
+    }
+        */
 }
 
 .csharpdance {
@@ -336,6 +347,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', end
     -webkit-transform:rotate(-30deg); 
     -ms-transform:rotate(-30deg);
     }
+     /*
+      0% {
+        transform: translate(0px,0px);
+
+    }
+    100% {
+        transform: translate(1000px, 500px); 
+
+    }
+        */
 }
 
 .exceptiondance {

@@ -110,6 +110,8 @@
     <Content Include="Content\CoLeadr_Images\CoLeader_PeopleIndex.png" />
     <Content Include="Content\CoLeadr_Images\CoLeader_ProjectDetails.png" />
     <Content Include="Content\CoLeadr_Images\CoLeader_TaskIndex.png" />
+    <Content Include="Content\CoLeadr_Images\coleadr_removefromgroupcode.png" />
+    <Content Include="Content\CoLeadr_Images\coleadr_viewmodel.png" />
     <Content Include="Content\fancybox_sprite.png" />
     <Content Include="Content\jquery.fancybox.css" />
     <Content Include="Content\MovieRentalApp_Images\movieapp_code.png" />
@@ -131,11 +133,13 @@
     <Content Include="Content\PortfolioSite_Images\portfoliosite_layoutrazor.png" />
     <Content Include="Content\PortfolioSite_Images\portfoliosite_layoutwires.png" />
     <Content Include="Content\PortfolioSite_Images\portfoliosite_ondevices.png" />
+    <Content Include="Content\PortfolioSite_Images\portfoliosite_ssms.png" />
     <Content Include="Content\PortfolioSite_Images\portfolio_normal_smallscreen.png" />
     <Content Include="Content\PortfolioSite_Images\portfolio_normal_smallscreen_menu.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\moarponies.css" />
     <Content Include="Content\WCCIChallenges_Images\WCCIChallenges_madLibsGenerator1.png" />
+    <Content Include="Content\WCCIChallenges_Images\WCCIChallenges_stackimplementation.png" />
     <Content Include="Content\WeatherApp_Images\weatherapp_ajax.png" />
     <Content Include="Content\WeatherApp_Images\weatherapp_portland.png" />
     <Content Include="Content\WeatherApp_Images\weatherapp_smallscreen.png" />
